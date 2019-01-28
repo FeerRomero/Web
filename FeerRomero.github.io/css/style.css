@@ -1,0 +1,52 @@
+body {
+	background-color: #EEF5DB;
+	font-family: "Tahoma", Geneva, sans-serif;
+}
+
+header > h2 {
+	text-align: center;
+	color: #FE5F55;
+}
+
+fieldset {
+	margin: 10px;
+	padding: 20px;
+	border: 8px groove;
+}
+
+div {
+	overflow: hidden;
+}
+
+.section_name {
+	color: #FE5F55;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.element_name {
+	color: #4F3824;
+	float: left;
+	font-weight: bold;
+	text-align: center;
+	width: 30%;
+}
+
+.info_section {
+	float: left;
+	width: 70%;
+}
+
+#profile_pic {
+	width: 20%;
+	height: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+#jump_top {
+	text-align: center;
+}
+
