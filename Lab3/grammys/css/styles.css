@@ -51,6 +51,10 @@ h3 {
   color: #b69859;
 }
 
+.song {
+	font-weight: bold;
+}
+
 h4 {
  display: inline;
 }
