@@ -30,6 +30,7 @@ function loadCategoryInfo() {
 		success : function (data) {
 			$("#category_types").on('change', function(categories) {
 				let new_html1 = "";
+				$(".nominees_section").html(new_html1);
 				let myObj = data["fields"];
 				let fieldId = $(this).val();
 				for(let i = 0; i < myObj.length; i++) {
@@ -98,7 +99,7 @@ function loadCategoryInfo() {
 					}
 				}
 
-			$("#nominees_section").replaceWith(new_html1);
+			$(".nominees_section").append(new_html1);
 			});
 		},
 		error: function (error_msg) {
