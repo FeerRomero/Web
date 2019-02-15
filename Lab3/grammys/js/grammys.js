@@ -45,15 +45,15 @@ function loadCategoryInfo() {
 						{
 							new_html1 += `
 							<p class="description">
-							${myObj.description}
+							${myObj[i].description}
 							</p>
 							`;	
 						}
 						
 						let listCategorias = myObj[i].categories;
-						let winner = myObj[i].winner_id;
-				
 						for(let j = 0; j < listCategorias.length; j++) {
+							let winner = listCategorias[j].winner_id;
+							console.log(winner);
 							new_html1 += `
 							<h3>
 							${listCategorias[j].category_name}
@@ -66,11 +66,11 @@ function loadCategoryInfo() {
 							for(let k = 0; k < listNominees.length; k++) {
 								if(winner == k) {
 									new_html1 += `
-									<p class="song" class="winner">
+									<p class="song winner wrap_text">
 									${listNominees[k].nominee}
 									</p>
 									<span>
-										|WINNER!
+										WINNER!
 									</span>
 									<p>
 									${listNominees[k].artist}

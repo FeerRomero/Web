@@ -68,3 +68,7 @@ span {
 hr {
   margin-top: 30px;
 }
+
+.wrap_text {
+  display: inline;
+}
