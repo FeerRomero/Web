@@ -5,12 +5,6 @@ const request = require('request')
 const mbxStyles = require('@mapbox/mapbox-sdk/services/geocoding');
 const geocodingService = mbxStyles({ accessToken: credentials.MAPBOX_TOKEN})
 
-//Setup de darksky
-const DarkSky = require('dark-sky')
-const darksky = new DarkSky( credentials.DARK_SKY_SECRET_KEY) // Your API KEY can be hardcoded, but I recommend setting it as an env variable.
-
-
-
 //Request a darksky la info del clima
 const weatherInfo = function (coordinates, callback) {
 	const url = 'https://api.darksky.net/forecast/' + credentials.DARK_SKY_SECRET_KEY + 
